@@ -1,3 +1,100 @@
 body {
   background: peachpuff;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a {
+ background-color: orange;
+ flex-grow: 1;
+ min-height: 10vh;
+ margin: 1em 0em;
+}
+
+.b {
+  background-color: lightsalmon;
+  min-height: 20vh;
+  flex-grow: 2;
+  margin: 0em 0em 1em 0em;
+}
+
+.c {
+  background-color: salmon;
+  min-height: 20vh;
+  flex-grow: 2;
+  min-width: 20%;
+  margin: 0em 1em 1em 1em;
+}
+
+.d {
+  background-color:darksalmon;
+  min-height: 20vh;
+  flex-grow: 2;
+  margin: 0em 0em 1em 0em;
+}
+
+.e {
+  background-color:darkorange;
+  min-height: 20vh;
+  flex-grow: 2;
+  margin: 0em 0em;
+}
+
+.f {
+  background-color: lightcoral;
+  flex-grow: 2;
+  min-height: 20vh;
+  margin: 0em 1em;
+}
+
+.g {
+  background-color: gold;
+  flex-grow: 2;
+  min-height: 20vh;
+  margin: 0em 0em;
+}
+
+.h {
+  background-color: indianred;
+  flex-grow:3;
+  margin: 1em 0em;
+}
+
+.small {
+  display: flex;
+  flex-direction: row;
+}
+
+.smaller {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 600px) {
+  .container{
+    flex-direction: row;
+    flex-wrap:wrap;
+ }
+ .a {
+   width: 100%;
+ }
+ .small {
+   display: flex;
+   flex-direction: row;
+   width: 66%
+ }
+ .smaller {
+   display: flex;
+   flex-direction: row;
+   width: 66%
+ }
+ .h {
+  
+ }
 }
